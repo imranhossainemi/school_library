@@ -60,7 +60,7 @@
 
 To get a local copy up and running, follow these steps.
 
-- clone this repo:git@github.com:dheerajsachdeva/school-library-ruby.git
+- clone this repo:git@github.com:imranhossainemi/school_library.git
 
 ### Prerequisites
 
@@ -105,7 +105,7 @@ Run: rspec to tun tests
 
 ## 👥 Authors <a name=""></a>
 
-👤 **DHEERAJ SACHDEVA**
+👤 
 
 - GitHub: [@imranhossainemi](https://github.com/imranhossainemi)
 
