@@ -8,4 +8,5 @@ class Teacher < Person
 
   def can_use_services?
     true
-  e
+  end
+end
