@@ -1,8 +1,17 @@
 require_relative 'app'
-require_relative 'handle_options'
-require_relative 'loader'
 
-def run_app(handle_options, _app)
+def display
+  puts 'Please choose an option by entering a number:'
+  puts '1 - List all books'
+  puts '2 - List all people'
+  puts '3 - Create a person'
+  puts '4 - Create a book'
+  puts '5 - Create a rental'
+  puts '6 - List all rentals for a given person id'
+  puts '7 - Exit'
+end
+
+def run_app(app)
   menu_options = {
     '1' => :list_all_books,
     '2' => :list_all_peoples,
@@ -13,11 +22,12 @@ def run_app(handle_options, _app)
     '7' => :exit
   }
   loop do
-    handle_options.display
+    display
     input = gets.chomp
+
     if menu_options.key?(input)
       run = menu_options[input]
-      handle_options.send(run)
+      app.send(run)
       break if run == 'exit'
     else
       puts 'Enter the correct option: '
@@ -27,11 +37,8 @@ end
 
 def main
   app = App.new
-  loader = Loader.new(app)
-  loader.load_all
-  handle_options = HandleOptions.new(app)
   puts 'Welcome to the School Library App!'
-  run_app(handle_options, app)
+  run_app(app)
 end
 
 main
