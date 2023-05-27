@@ -105,7 +105,7 @@ Run: rspec to tun tests
 
 ## 👥 Authors <a name=""></a>
 
-👤 **DHEERAJ SACHDEVA**
+👤
 
 - GitHub: [@imranhossainemi](https://github.com/imranhossainemi)
 
